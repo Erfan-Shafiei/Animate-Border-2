@@ -1,7 +1,7 @@
 body {
     display: flex;
     background-color: #1b1b1b;
-    font-family: "B Nazanin";
+    font-family: "B Nazanin", Arial, sans-serif;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -25,12 +25,12 @@ a {
     border: 1px solid #ffffff;
 }
 
-#box-header {
+#box-header, #box-header-en {
     font-size: 30px;
     color: #ffffff;
 }
 
-#box-body  {
+#box-body, #box-body-en {
     color: #ffffff;
 }
 
@@ -50,12 +50,29 @@ a {
     right: 8px;
 }
 
-#text-download {
+#text-download, #text-download-en {
     position: absolute;
     display: inline-block;
     color: #ffffff;
     right: 85px;
     bottom: 45px;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.lang-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "B Nazanin", Arial, sans-serif;
 }
 
 /* Animate Border */
@@ -76,7 +93,7 @@ a {
     border-radius: 2rem;
     z-index: -1;
     padding: 0.5rem;
-    background: conic-gradient(from var(--angle), #ff9100, #57c785, #3987ed, #e317a6, #891919, #ff9100);
+    background: conic-gradient(from var(--angle), transparent 90%,  #ff9100); /* Set your color here */
     animation: Edit-Angle 3s linear infinite;
 }
 

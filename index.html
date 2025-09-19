@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +7,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
+    <div class="language-switcher">
+        <button id="switch-lang" class="lang-btn">EN</button>
+    </div>
     <div id="box">
-        <h1 id="box-header">
-            انیمیشن بوردر گرادینت متحرک
-        </h1>
+        <h1 id="box-header" data-lang="fa">انیمیشن بوردر گرادینت متحرک</h1>
+        <h1 id="box-header-en" data-lang="en" style="display: none;">Animated Border Gradient</h1>
         <div id="line"></div>
-        <p id="box-body">
+        <p id="box-body" data-lang="fa">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
             چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
             و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
@@ -26,12 +26,18 @@
             و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل
             دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
         </p>
+        <p id="box-body-en" data-lang="en" style="display: none;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. 
+            Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non 
+            venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere.
+        </p>
         <div id="line"></div>
         <div id="download-sorce">
            <a id="button" href="zip/Animate-Border-2.zip" download><i class="fa fa-pencil"></i></a>
         </div>
-        <p id="text-download">دانلود سورس کد</p>
+        <p id="text-download" data-lang="fa">دانلود سورس کد</p>
+        <p id="text-download-en" data-lang="en" style="display: none;">Download Source Code</p>
     </div>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
